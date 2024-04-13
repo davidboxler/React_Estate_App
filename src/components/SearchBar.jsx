@@ -1,7 +1,5 @@
 import { useState } from "react";
 
-import "./SearchBar.scss";
-
 const types = ["buy", "rent"];
 
 function SearchBar() {
