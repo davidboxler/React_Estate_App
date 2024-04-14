@@ -1,4 +1,5 @@
 import { useState } from "react";
+import search from "../assets/images/search.png";
 
 const types = ["buy", "rent"];
 
@@ -44,7 +45,7 @@ function SearchBar() {
           placeholder="Max Price"
         />
         <button>
-          <img src="/search.png" alt="" />
+          <img src={search} alt="img-search" />
         </button>
       </form>
     </div>

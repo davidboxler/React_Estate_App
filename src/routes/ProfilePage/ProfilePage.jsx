@@ -12,7 +12,7 @@ function ProfilePage() {
           </div>
           <div className="info">
             <span>
-              Avatar: <img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750dpr=2" alt="user-img" />
+              Avatar: <img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750dpr=2" alt="img-user" />
             </span>
             <span>
               User: <b>Jhon Doe</b>

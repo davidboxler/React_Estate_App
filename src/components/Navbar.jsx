@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/images/logo.png";
+import menu from "../assets/images/menu.png";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -9,7 +11,7 @@ function Navbar() {
     <nav>
       <div className="left">
         <a href="/" className="logo">
-          <img src="/logo.png" alt="logo" />
+          <img src={logo} alt="logo" />
           <span>LamaEstate</span>
         </a>
         <a href="/">Home</a>
@@ -20,7 +22,10 @@ function Navbar() {
       <div className="right">
         {user ? (
           <div className="user">
-           <img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750dpr=2" alt="user-img" />
+            <img
+              src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750dpr=2"
+              alt="user-img"
+            />
             <span>Jhon Doe</span>
             <Link to="/profile" className="profile">
               <div className="notification">3</div>
@@ -38,8 +43,8 @@ function Navbar() {
 
         <div className="menuIcon">
           <img
-            src="/menu.png"
-            alt=""
+            src={menu}
+            alt="img-menu"
             onClick={() => setOpen((prev) => !prev)}
           />
         </div>

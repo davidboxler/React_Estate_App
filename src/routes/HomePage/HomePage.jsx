@@ -1,3 +1,4 @@
+import bg from '../../assets/images/bg.png';
 import SearchBar from "../../components/SearchBar";
 
 function HomePage() {
@@ -30,7 +31,7 @@ function HomePage() {
         </div>
       </div>
       <div className="imgContainer">
-        <img src="/bg.png" alt="" />
+        <img src={bg} alt="img-bg" />
       </div>
     </div>
   );
