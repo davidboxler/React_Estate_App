@@ -71,6 +71,10 @@
             position: absolute;
             right: 0;
 
+            @include mx {
+                margin-top: 80px;
+            }
+
             @include lg {
                 width: 105%;
             }
