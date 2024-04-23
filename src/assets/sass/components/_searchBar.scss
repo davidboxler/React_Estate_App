@@ -1,18 +1,19 @@
 @import '../helpers/_responsive.scss';
+@import '../helpers/variables';
 
 .searchBar {
     .type {
         button {
             padding: 16px 36px;
-            border: 1px solid #999;
+            border: 1px solid $light-color;
             border-bottom: none;
             cursor: pointer;
-            background-color: white;
+            background-color: $white;
             text-transform: capitalize;
 
             &.active {
-                background-color: black;
-                color: white;
+                background-color: $black;
+                color: $white;
             }
 
             &.first-child {
@@ -28,7 +29,7 @@
     }
 
     form {
-        border: 1px solid #999;
+        border: 1px solid $light-color;
         display: flex;
         justify-content: space-between;
         height: 64px;
@@ -46,6 +47,15 @@
 
             @include lg {
                 padding: 0px 5px;
+
+                &:nth-child(2),
+                &:nth-child(3) {
+                    width: 140px;
+                }
+            }
+
+            @include lx {
+                width: 160px;
 
                 &:nth-child(2),
                 &:nth-child(3) {
@@ -71,23 +81,30 @@
                 }
 
                 padding: 20px;
-                border: 1px solid #999;
+                border: 1px solid $light-color;
             }
         }
 
-        button {
+        .button-form {
             border: none;
             cursor: pointer;
-            background-color: #fece51;
+            align-content: center;
+            background-color: $main-color;
             flex: 1;
 
             @include sm {
                 padding: 10px;
             }
 
-            img {
-                width: 24px;
-                height: 24px;
+            .box-img {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 24px;
+                    height: 24px;
+                }
             }
         }
     }

@@ -15,9 +15,9 @@ function Navbar() {
           <span>LamaEstate</span>
         </a>
         <a href="/">Home</a>
-        <a href="/">About</a>
-        <a href="/">Contact</a>
-        <a href="/">Agents</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+        <a href="/agents">Agents</a>
       </div>
       <div className="right">
         {user ? (
@@ -34,8 +34,8 @@ function Navbar() {
           </div>
         ) : (
           <>
-            <a href="/">Sign in</a>
-            <a href="/" className="register">
+            <a href="/sing-in">Sign in</a>
+            <a href="/sing-up" className="register">
               Sign up
             </a>
           </>
@@ -50,11 +50,11 @@ function Navbar() {
         </div>
         <div className={open ? "menu active" : "menu"}>
           <a href="/">Home</a>
-          <a href="/">About</a>
-          <a href="/">Contact</a>
-          <a href="/">Agents</a>
-          <a href="/">Sign in</a>
-          <a href="/">Sign up</a>
+          <a href="/about">About</a>
+          <a href="/contact">Contact</a>
+          <a href="/agents">Agents</a>
+          <a href="/sing-in">Sign in</a>
+          <a href="/sing-up">Sign up</a>
         </div>
       </div>
     </nav>

@@ -1,0 +1,109 @@
+@import '../helpers/_responsive.scss';
+@import '../helpers/variables';
+
+.agentsPage {
+    display: flex;
+    height: 100%;
+
+    @include md {
+        flex-direction: column;
+        overflow: scroll;
+    }
+
+    .textContainer {
+        flex: 3;
+        overflow-y: scroll;
+        padding-bottom: 50px;
+
+        @include md {
+            flex: none;
+            height: max-content;
+        }
+
+        .wrapper {
+            padding-right: 100px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+
+            @include md {
+                padding: 0;
+            }
+
+            @include sm {
+                justify-content: flex-start;
+            }
+
+            .title {
+                font-size: 64px;
+
+                @include lg {
+                    font-size: 48px;
+                }
+            }
+
+            .box-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+                gap: 2rem;
+
+                .box {
+                    text-align: center;
+                    padding: 3rem 2rem;
+                    border-radius: .5rem;
+
+                    &:hover {
+                        background: $white;
+                        box-shadow: $box-shadow;
+                        transform: translateY(-1rem);
+                    }
+
+                    img {
+                        height: 10rem;
+                        width: 10rem;
+                        border-radius: 50%;
+                        margin-bottom: 1.5rem;
+                    }
+
+                    h3 {
+                        text-transform: capitalize;
+                        color: $dark;
+                    }
+
+                    p {
+                        line-height: 2;
+                        color: $grey-dark-1;
+                        margin-bottom: 0;
+                        padding: 1rem 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .imgContainer {
+        flex: 2;
+        background-color: $light-bg;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        @include md {
+            display: none;
+        }
+
+        img {
+            width: 115%;
+            position: absolute;
+            right: 0;
+
+            @include mx {
+                margin-top: 80px;
+            }
+
+            @include lg {
+                width: 105%;
+            }
+        }
+    }
+}

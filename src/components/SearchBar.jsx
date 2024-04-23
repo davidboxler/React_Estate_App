@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import search from "../assets/images/search.png";
 
 const types = ["buy", "rent"];
@@ -44,9 +45,11 @@ function SearchBar() {
           max={10000}
           placeholder="Max Price"
         />
-        <button>
-          <img src={search} alt="img-search" />
-        </button>
+        <Link to={"/list"} className="button-form">
+          <div className="box-img">
+            <img src={search} alt="img-search" />
+          </div>
+        </Link>
       </form>
     </div>
   );

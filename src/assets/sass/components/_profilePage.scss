@@ -1,4 +1,5 @@
 @import '../helpers/_responsive.scss';
+@import '../helpers/variables';
 
 .profilePage {
     display: flex;
@@ -36,7 +37,7 @@
     
                 button {
                     padding: 12px 24px;
-                    background-color: #fece51;
+                    background-color: $main-color;
                     cursor: pointer;
                     border: none;
                 }
@@ -65,7 +66,7 @@
 
     .chatContainer {
         flex: 2;
-        background-color: #fcf5f3;
+        background-color: $light-bg;
         height: 100%;
 
         @include md {

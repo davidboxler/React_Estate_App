@@ -1,4 +1,5 @@
 @import '../helpers/_responsive.scss';
+@import '../helpers/variables';
 
 .singlePage {
     display: flex;
@@ -23,6 +24,7 @@
 
             .info {
                 margin-top: 50px;
+                margin-bottom: 50px;
 
                 .top {
                     display: flex;
@@ -41,7 +43,7 @@
                             display: flex;
                             gap: 5px;
                             align-items: center;
-                            color: #888;
+                            color: $grey-light;
                             font-size: 14px;
 
                             img {
@@ -52,7 +54,7 @@
 
                         .price {
                             padding: 5px;
-                            background-color: rgba(254, 205, 81, 0.438);
+                            background-color: $bg-color-1;
                             border-radius: 5px;
                             width: max-content;
                             font-size: 20px;
@@ -68,7 +70,7 @@
                         gap: 20px;
                         padding: 0px 50px;
                         border-radius: 10px;
-                        background-color: rgba(254, 205, 81, 0.209);
+                        background-color: $bg-color-1;
                         font-weight: 600;
 
                         img {
@@ -82,7 +84,7 @@
 
                 .bottom {
                     margin-top: 50px;
-                    color: #555;
+                    color: $grey-dark;
                     line-height: 20px;
                 }
             }
@@ -93,7 +95,7 @@
 
     .features {
         flex: 2;
-        background-color: #fcf5f3;
+        background-color: $light-bg;
         height: 100%;
         overflow-y: scroll;
 
@@ -126,7 +128,7 @@
                 gap: 10px;
 
                 img {
-                    background-color: rgba(254, 205, 81, 0.209);
+                    background-color: $bg-color-2;
                 }
 
                 .featureText {
@@ -145,7 +147,7 @@
                 flex-direction: column;
                 gap: 20px;
                 padding: 20px 10px;
-                background-color: white;
+                background-color: $white;
                 border-radius: 10px;
 
             }
@@ -154,7 +156,7 @@
                 display: flex;
                 justify-content: space-between;
                 padding: 20px 10px;
-                background-color: white;
+                background-color: $white;
                 border-radius: 10px;
             }
 
@@ -170,7 +172,7 @@
                     display: flex;
                     align-items: center;
                     gap: 10px;
-                    background-color: white;
+                    background-color: $white;
                     padding: 10px;
                     border-radius: 5px;
                 }
@@ -192,8 +194,8 @@
                     display: flex;
                     align-items: center;
                     gap: 5px;
-                    background-color: white;
-                    border: 1px solid #fece51;
+                    background-color: $white;
+                    border: 1px solid $main-color;
                     border-radius: 5px;
                     cursor: pointer;
 

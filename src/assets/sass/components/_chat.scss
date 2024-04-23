@@ -1,3 +1,5 @@
+@import '../helpers/variables';
+
 .chat {
     height: 100%;
     display: flex;
@@ -15,7 +17,7 @@
         }
 
         .message {
-            background-color: white;
+            background-color: $white;
             padding: 20px;
             border-radius: 10px;
             display: flex;
@@ -38,13 +40,13 @@
 
     .chatBox {
         flex: 1;
-        background-color: white;
+        background-color: $white;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
 
         .top {
-            background-color: #f7c14b85;
+            background-color: $brown;
             padding: 20px;
             font-weight: bold;
             display: flex;
@@ -87,7 +89,7 @@
 
                 span {
                     font-size: 12px;
-                    background-color: #f7c14b85;
+                    background-color: $brown;
                     padding: 2px;
                     border-radius: 5px;
                 }
@@ -95,7 +97,7 @@
         }
 
         .bottom {
-            border-top: 2px solid #f7c14b85;
+            border-top: 2px solid $brown;
             height: 60px;
             display: flex;
             align-items: center;
@@ -110,7 +112,7 @@
 
             button {
                 flex: 1;
-                background-color: #f7c14b85;
+                background-color: $brown;
                 height: 100%;
                 border: none;
                 cursor: pointer;

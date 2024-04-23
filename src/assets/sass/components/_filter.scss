@@ -1,3 +1,5 @@
+@import '../helpers/variables';
+
 .filter {
     display: flex;
     flex-direction: column;
@@ -20,7 +22,7 @@
         input, select {
             width: 100px;
             padding: 10px;
-            border: 1px solid #e0e0e0;
+            border: 1px solid $light;
             border-radius: 5px;
             font-size: 14px;
         }
@@ -42,7 +44,7 @@
             padding: 10px;
             border: none;
             cursor: pointer;
-            background-color: #fece51;
+            background-color: $main-color;
 
             img {
                 width: 24px;

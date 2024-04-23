@@ -1,3 +1,5 @@
+@import '../helpers/variables';
+
 .listPage {
     display: flex;
     height: 100%;
@@ -20,7 +22,7 @@
     .mapContainer {
         flex: 2;
         height: 100%;
-        background-color: #fcf5f3;
+        background-color: $light-bg;
     }
 }
 
