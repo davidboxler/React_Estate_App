@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Pin({ item }) {
   return (
-    <Marker position={[item.latitude, item.longitude]}>
+    <Marker src="https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png" position={[item.latitude, item.longitude]}>
       <Popup>
         <div className="popupContainer">
           <img src={item.img} alt="img-apartment" />

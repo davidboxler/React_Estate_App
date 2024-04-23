@@ -99,6 +99,7 @@ export const singlePostData = {
     "https://images.pexels.com/photos/2062426/pexels-photo-2062426.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750dpr=2",
     "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750dpr=2",
   ],
+  img: "https://images.pexels.com/photos/1918291/pexels-photo-1918291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750dpr=2",
   bedRooms: 2,
   bathroom: 1,
   size: 861,
