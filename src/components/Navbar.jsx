@@ -10,14 +10,14 @@ function Navbar() {
   return (
     <nav>
       <div className="left">
-        <a href="/" className="logo">
+        <Link to={"/"} className="logo">
           <img src={logo} alt="logo" />
           <span>LamaEstate</span>
-        </a>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/contact">Contact</a>
-        <a href="/agents">Agents</a>
+        </Link>
+        <Link to={"/"}>Home</Link>
+        <Link to={"/about"}>About</Link>
+        <Link to={"/contact"}>Contact</Link>
+        <Link to={"/agents"}>Agents</Link>
       </div>
       <div className="right">
         {user ? (
@@ -27,17 +27,17 @@ function Navbar() {
               alt="user-img"
             />
             <span>Jhon Doe</span>
-            <Link to="/profile" className="profile">
+            <Link to={"/profile"} className="profile">
               <div className="notification">3</div>
               <span>Profile</span>
             </Link>
           </div>
         ) : (
           <>
-            <a href="/sing-in">Sign in</a>
-            <a href="/sing-up" className="register">
+            <Link to={"/sing-in"}>Sign in</Link>
+            <Link to={"/sing-up"} className="register">
               Sign up
-            </a>
+            </Link>
           </>
         )}
 
@@ -49,12 +49,12 @@ function Navbar() {
           />
         </div>
         <div className={open ? "menu active" : "menu"}>
-          <a href="/">Home</a>
-          <a href="/about">About</a>
-          <a href="/contact">Contact</a>
-          <a href="/agents">Agents</a>
-          <a href="/sing-in">Sign in</a>
-          <a href="/sing-up">Sign up</a>
+          <Link to={"/"}>Home</Link>
+          <Link to={"/about"}>About</Link>
+          <Link to={"/contact"}>Contact</Link>
+          <Link to={"/agents"}>Agents</Link>
+          <Link to={"/sing-in"}>Sign in</Link>
+          <Link to={"/sing-up"}>Sign up</Link>
         </div>
       </div>
     </nav>
