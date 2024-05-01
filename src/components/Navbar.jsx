@@ -6,7 +6,12 @@ import menu from "../assets/images/menu.png";
 function Navbar() {
   const [open, setOpen] = useState(false);
 
+  const handleLinkClick = () => {
+    setOpen(false); // Cierra el menú cuando se hace clic en un enlace
+  };
+
   const user = true;
+
   return (
     <nav>
       <div className="left">
@@ -49,12 +54,12 @@ function Navbar() {
           />
         </div>
         <div className={open ? "menu active" : "menu"}>
-          <Link to={"/"}>Home</Link>
-          <Link to={"/about"}>About</Link>
-          <Link to={"/contact"}>Contact</Link>
-          <Link to={"/agents"}>Agents</Link>
-          <Link to={"/sing-in"}>Sign in</Link>
-          <Link to={"/sing-up"}>Sign up</Link>
+          <Link to={"/"} onClick={handleLinkClick}>Home</Link>
+          <Link to={"/about"} onClick={handleLinkClick}>About</Link>
+          <Link to={"/contact"} onClick={handleLinkClick}>Contact</Link>
+          <Link to={"/agents"} onClick={handleLinkClick}>Agents</Link>
+          <Link to={"/sing-in"} onClick={handleLinkClick}>Sign in</Link>
+          <Link to={"/sing-up"} onClick={handleLinkClick}>Sign up</Link>
         </div>
       </div>
     </nav>

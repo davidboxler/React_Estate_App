@@ -1,4 +1,5 @@
 @import '../helpers/variables';
+@import '../helpers/responsive';
 
 .filter {
     display: flex;
@@ -38,6 +39,15 @@
         display: flex;
         justify-content: space-between;
         gap: 20px;
+
+        @include sl {
+            flex-wrap: wrap;   
+            gap: 10px;  
+        }
+
+        @include sm {
+            flex-wrap: wrap;   
+        }
 
         button {
             width: 100px;

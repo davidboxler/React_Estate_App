@@ -26,7 +26,7 @@ function SinglePage() {
                   <img src={pin} alt="img-pin" />
                   <span>{singlePostData.address}</span>
                 </div>
-                <div className="price">{singlePostData.price}</div>
+                <div className="price">$ {singlePostData.price}</div>
               </div>
               <div className="user">
                 <img src={userData.img} alt="img-user" />

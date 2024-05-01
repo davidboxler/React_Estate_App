@@ -3,7 +3,12 @@
 
 .contactPage {
     display: flex;
-    height: 100%;
+
+    @include sm {
+        overflow: scroll;
+        height: 90%;
+        padding-right: 10px;
+    }
 
     .textContainer {
         flex: 3;

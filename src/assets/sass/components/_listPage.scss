@@ -1,8 +1,15 @@
 @import '../helpers/variables';
+@import '../helpers/responsive';
 
 .listPage {
     display: flex;
     height: 100%;
+
+    @include sl {
+        display: block;
+        height: 150%;
+        width: auto;        
+    }
 
     .listContainer {
         flex: 3;
@@ -16,6 +23,11 @@
             gap: 50px;
             overflow-y: scroll;
             padding-bottom: 50px;
+
+            @include sm {
+               width: 100%;   
+               padding-right: 10px;
+            }
         }
     }
 
@@ -23,6 +35,10 @@
         flex: 2;
         height: 100%;
         background-color: $light-bg;
+
+        @include sm {
+            display: none;     
+        }
     }
 }
 

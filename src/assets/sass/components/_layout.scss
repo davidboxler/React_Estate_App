@@ -24,5 +24,10 @@
 
     .content {
         height: calc(100vh - 100px);
+
+        @include sl {
+            height: 100vh;
+            // overflow: scroll;
+        }
     }
 }

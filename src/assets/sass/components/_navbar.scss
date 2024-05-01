@@ -79,7 +79,7 @@ nav {
             }
 
             span {
-                @include sm{
+                @include sm {
                     display: none;
                 }
             }
@@ -112,6 +112,10 @@ nav {
             background-color: $main-color;
         }
 
+        .menu {
+            display: none;
+        }
+
         .menuIcon {
             display: none;
             z-index: 999;
@@ -127,26 +131,26 @@ nav {
             }
         }
 
-        .menu {
-            position: absolute;
-            background-color: $black;
-            color: $white;
-            height: 100vh;
-            top: 0;
-            right: -50%;
-            width: 50%;
-            transition: all 1s ease;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
+        @include sm {
+            .menu {
+                position: fixed;
+                background-color: $black;
+                color: $white;
+                height: 100vh;
+                top: 0;
+                right: -50%;
+                width: 50%;
+                transition: all 1s ease;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-size: 24px;
 
-            &.active {
-                right: 0;
-            }
+                &.active {
+                    right: 0;
+                }
 
-            @include sm {
                 a {
                     display: initial;
                 }
